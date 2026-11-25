@@ -1,0 +1,27 @@
+name: vokabelheld
+description: Offline-Vokabeltrainer fuer Kinder (Englisch - Deutsch) mit lokaler OCR.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.2            # State-Management
+  sqflite: ^2.3.3+1           # lokale SQLite-Datenbank
+  path: ^1.9.0
+  image_picker: ^1.1.2        # Kamera / Galerie
+  google_mlkit_text_recognition: ^0.15.0   # lokale OCR (on-device)
+
+  material_ui: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
